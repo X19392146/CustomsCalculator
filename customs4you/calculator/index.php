@@ -1,18 +1,42 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>User Registration</title>
-	<link rel= "stylesheet" type="text/css" href= "../contact/contact.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>About Us</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="../about/about.css" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<!--Navigation bar with signup and login buttons-->
-		<div class="topnav">
-			<a class="home" href="../html/Homepage.html">Home</a>
-			<a href="index.php">Sign up/Login</a>
-			<a href="../calc/calculator.php">Calculator</a>
-			<a href="../contact/contact.php">Contact</a>
-		</div>
-<br/>
+	<header class="header">
+		<nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+				
+			
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuicon">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				
+				<a href="../Index.php"><img class="logo" src="../Images/Logo2.jpg"/></a>
+				</div>
+				<div class="collapse navbar-collapse" id="menuicon">
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="../about/About.php">&nbsp; About Us &nbsp; </a></li>
+				<li><a href="index.php">&nbsp; SignUp/Login &nbsp;</a></li>
+				<li><a href="../calc/calculator.php">&nbsp; Calculate  &nbsp;</a></li>
+				<li><a href="../contact/contact.php">&nbsp; Contact Us &nbsp;</a></li>
+				<li><a href="../pages/privatepolicy.html">&nbsp; Private Policy &nbsp;</a></li>
+				</ul>
+				</div>	
+			</div>
+		</nav>	
 <br/>
 <br/>
 <br/>
