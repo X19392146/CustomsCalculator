@@ -1,0 +1,128 @@
+/* Removing Bullet Points From List*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	text-decoration: underline;
+}
+
+/*Floating List Elements to the left*/
+li {
+  float: left;
+}
+
+/*Styling Nav Bar*/
+li a {
+	font-family: Georgia, Times, serif;
+	display: block;
+	color: #999999;
+	text-align: center;
+	padding: 13px 61px;
+	text-decoration: none;
+	font-size: 27px;
+}
+
+/* Change the link color to #e6ffe6 (Pastel Green) on hover */
+li a:hover {
+	background-color: #B9D8D2;
+	color: #ffffff;
+}
+
+/*Styling Heading 1 */
+h1 {
+	text-align: center ;
+	margin: 30px auto;
+	font-family: Georgia, Times, serif;
+	font-size: 45px;
+	font-weight: 7;
+	max-width: 500px;
+	position: relative;
+	margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Setting Line Before Heading 1*/
+h1:before {
+  content: "";
+  display: block;
+  width: 565px;
+  height: 1px;
+  background: #000;
+  left: 150;
+  top: 50%;
+  position: absolute;
+
+}
+
+/*Setting Line After Heading 1*/
+h1:after {
+  content: "";
+  display: block;
+  width: 565px;
+  height: 1px;
+  background: #000;
+  right: 150;
+  top: 50%;
+  position: absolute;
+
+  
+}
+
+/*Styling Heading 2*/
+h2 {
+	margin-top: 100;
+	color: #666666;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+	width: 100%;
+	text-align: center;
+	font-size: 26px;
+	padding: 14px 0px;	
+}
+/* Set a style for all buttons */
+.logoutbtn {
+	background-color: #B9D8D2;
+	color: #666666;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+  	background: #A7C8C2;
+	border-color: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+	text-transform: uppercase;	
+}
+
+.container {
+  height: 30px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+   background: #ddd;
+  font-family: Georgia, Times, serif;
+}
+
