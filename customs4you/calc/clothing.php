@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Calculator</title>
+	<title>Clothing Customs</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<link href="../about/about.css" rel="stylesheet" type="text/css" />
 	
@@ -38,24 +38,54 @@
 				</div>	
 			</div>
 		</nav>
-<br/><br/>		<br/><br/>
+<br/><br/>	
+
 <center>
-<a href="clothing.php"><img src="../clothes.jpg" alt="clothes link" width="250" height="250"/></a>  
- <figcaption>Customs for Clothing</figcaption>
-<br/><br/>
-<a href="technology.php"><img src="../technology.png" alt="technology link" width="250" height="250"/></a>
- <figcaption>Customs for Technology</figcaption>
-<br/><br/>
+<?php
+$host    = "localhost";
+$user    = "root";
+$pass    = "";
+$db_name = "customs4you";
 
-<a href="sport.php"><img src="../sports.jpg" alt="sport link" width="250" height="250"/></a>
- <figcaption>Customs for Sports Items</figcaption>
-<br/><br/>
+//create connection
+$connection = mysqli_connect($host, $user, $pass, $db_name);
 
-<a href="jewellry.php"><img src="../jewel.jpg" alt="jewellry link" width="250" height="250"/></a>
- <figcaption>Customs for Jewllery</figcaption>
-<br/><br/>
+//test if connection failed
+if(mysqli_connect_errno()){
+    die("connection failed: "
+        . mysqli_connect_error()
+        . " (" . mysqli_connect_errno()
+        . ")");
+}
 
+//get results from database
+$result = mysqli_query($connection,"SELECT * FROM websites WHERE category='clothes'");
+$all_property = array();  //declare an array for saving property
+
+//showing property
+echo '<table class="data-table">
+        <tr class="data-heading">';  //initialize table tag
+while ($property = mysqli_fetch_field($result)) {
+    echo '<td>' . $property->name . '</td>';  //get field name for header
+    array_push($all_property, $property->name);  //save those to array
+}
+echo '</tr>'; //end tr tag 
+
+
+
+//showing all data
+while ($row = mysqli_fetch_array($result)) {
+    echo "<tr>";
+    foreach ($all_property as $item) {
+        echo '<td>' . $row[$item] . '</td>'; //get items  
+    }
+    echo '</tr>';
+} 
+echo "</table>";
+?>
 </center>
+
+
 
 
 </body>

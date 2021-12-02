@@ -96,15 +96,16 @@ if (comment==null || comment==""){
 				<span class="icon-bar"></span>
 				</button>
 				
-				<a href="../Index.php"><img class="logo" src="../Images/Logo2.jpg"/></a>
+				<a href="../Index.php"><img class="logo" src="../Calculator/Logo2.jpg"/></a>
 				</div>
 				<div class="collapse navbar-collapse" id="menuicon">
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="../about/About.php">&nbsp; About Us &nbsp; </a></li>
+					<li><a href="../homepage/NewHome.html">&nbsp; Homepage &nbsp; </a></li>
+				<li><a href="../About.php">&nbsp; About Us &nbsp; </a></li>
 				<li><a href="../calculator/index.php">&nbsp; SignUp/Login &nbsp;</a></li>
 				<li><a href="../calc/calculator.php">&nbsp; Calculate  &nbsp;</a></li>
 				<li><a href="contact.php">&nbsp; Contact Us &nbsp;</a></li>
-				<li><a href="../pages/privatepolicy.html">&nbsp; Private Policy &nbsp;</a></li>
+				<li><a href="../privatepolicy.php">&nbsp; Private Policy &nbsp;</a></li>
 				</ul>
 				</div>	
 			</div>
@@ -171,6 +172,7 @@ if (comment==null || comment==""){
                 
             <input type="submit" value="Submit">
         </form>
+		<br/><br/><br/><br/>
     </center>
 </body>
   
